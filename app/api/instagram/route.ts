@@ -57,6 +57,7 @@ async function fetchComments(
   eligibleComments: InstagramComment[];
 }> {
   // Get media ID from shortcode
+  // @ts-ignore
   const mediaId = await ig.media.urlInfo(
     `https://www.instagram.com/p/${shortcode}/`,
   );
